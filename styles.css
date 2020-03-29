@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#e7dede, #ffffffb6), url(./img1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 80vw;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.branding {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.branding p {
+  text-align: center;
+  line-height: 1.5em;
+  margin-bottom: 7px;
+}
+.mybutton {
+  text-align: center;
+  margin-top: 5px;
+  padding: 9px 5px;
+  border: none;
+  cursor: pointer;
+  background: green;
+  color: white;
+}
+.form-mini-wrapper {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(#012717d7, #046814de), url(./img3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-mini-wrapper h1 {
+  color: #ffffff;
+}
+.form-div {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 2px;
+}
+
+.form-filed {
+  width: 90%;
+  height: 2rem;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid green;
+  color: #ffffff;
+}
+.form-filed::placeholder {
+  text-align: left;
+  margin-left: 2px;
+  color: #f1e8e8e1;
+}
+
+.submit-btn {
+  width: 90%;
+  height: 2rem;
+  margin-bottom: 2px;
+  margin-top: 5px;
+  padding: 8px 5px;
+  border: none;
+  cursor: pointer;
+  background: green;
+  color: white;
+  transition: 0.5s linear;
+}
+
+.submit-btn:hover {
+  height: 2.3rem;
+  background: white;
+  color: green;
+}
+
+@media screen and (max-width: 520px) {
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+
+    padding: 20px;
+  }
+
+  .branding {
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    padding-left: 10px;
+  }
+  .form-mini-wrapper {
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form-wrapper h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  .mybutton {
+    text-align: center;
+    margin-top: 5px;
+    padding: 9px 5px;
+    border: none;
+    cursor: pointer;
+    background: green;
+    color: white;
+  }
+}
